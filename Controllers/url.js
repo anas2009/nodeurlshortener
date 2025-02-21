@@ -14,7 +14,6 @@ export const shortURL = async (req, res) => {
 
   await newUrl.save();
 
-  console.log(newUrl);
   res.render('index.ejs', { shortURL: shortUrl });
 };
 
